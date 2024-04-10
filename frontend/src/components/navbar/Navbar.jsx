@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { Link } from "react-scroll";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const navigate = useNavigate();
@@ -21,6 +21,7 @@ const NavBar = () => {
     },
   ];
 
+  const location = useLocation();
   return (
     <div className="flex flex-shrink-0 justify-between items-center w-full h-16 sticky px-4 md:pl-6">
       <div className=" flex items-center w-full">
@@ -29,7 +30,8 @@ const NavBar = () => {
             <p className="font-extrabold text-2xl italic cursor-pointer hover:scale-110 duration-200 bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text ">FindCAs</p>
           </div>
         </Link>
-
+    {
+      location.pathname==='/' &&
         <ul className="hidden md:flex">
           {links.map(({ id, link }) => (
             <li
@@ -45,6 +47,7 @@ const NavBar = () => {
             </li>
           ))}
         </ul>
+}
       </div>
       <div className="flex gap-[8px] px-[10px] items-center justify-center">
         <button className="text-primary rounded-[10px] border-primary border-[1.5px]  px-[10px] py-1">
