@@ -1,8 +1,8 @@
 import NavBar from "../navbar/Navbar";
 import SearchBar from "../searchbar/SearchBar";
-import HeroOne from "../../assets/Hero1.jpeg";
-import HeroTwo from "../../assets/Hero2.jpeg";
-import HeroThree from "../../assets/Hero3.jpeg";
+import HeroOne from "../../assets/hero1.jpeg";
+import HeroTwo from "../../assets/hero2.jpeg";
+import HeroThree from "../../assets/hero3.jpeg";
 
 const HeroSection = () => {
   const gradientStyle = {

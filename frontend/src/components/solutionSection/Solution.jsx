@@ -1,4 +1,4 @@
-import SolutionBG from "../../assets/SolutionBG.png";
+import SolutionBG from "../../assets/SolutionBg.png";
 import { useState } from "react";
 const Solution = () => {
   const solutionStyle = {
