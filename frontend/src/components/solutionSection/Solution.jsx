@@ -4,7 +4,7 @@ const Solution = () => {
   const solutionStyle = {
     backgroundImage: `url(${SolutionBG})`,
   };
-  const [solutionCards, setSolutionCard] = useState([
+  const [solutionCards] = useState([
     {
       id: [1, "th"],
       title: "Commencement of business",
